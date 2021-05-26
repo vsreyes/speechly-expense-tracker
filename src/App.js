@@ -37,12 +37,12 @@ const App = () => {
         <Grid item xs={12} sm={4} className={classes.mobile}>
           <Details title='Income' />
         </Grid>
-        <Grid ref={Main} item xs={12} sm={3} className={classes.main}>
+        <Grid ref={main} item xs={12} sm={3} className={classes.main}>
           <Main />
         </Grid>
-        <Grid item xs={12} sm={4} className={classes.desktop}>
+        {<Grid item xs={12} sm={4} className={classes.desktop}>
           <Details title='Income' />
-        </Grid>
+          </Grid>}
         <Grid item xs={12} sm={4} classesName={classes.last}>
           <Details title='Expense' />
         </Grid>
